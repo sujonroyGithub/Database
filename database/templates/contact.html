@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %} Contact Us{% endblock title %}
+{% block body %} 
+
+
+<div class="container">
+<form method="post" action="/contact">
+  {% csrf_token %}
+    <div class="mb-3 mt-3">
+        <label for="exampleInputname1" class="form-label"> <b> Name</b></label>
+        <input type="text" class="form-control" placeholder="Enter Your Fullname Here.." id="exampleInputname1" name="name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputjobtitle1" class="form-label"> <b>Job title</b></label>
+        <input type="text" class="form-control" id="exampleInputjobtitle1" name="title">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputsalary1" class="form-label"> <b> Salary</b></label>
+        <input type="number" class="form-control" id="exampleInputsalary1" name="salary">
+      </div>
+      
+    <div class="mb-3 ">
+      <label for="exampleInputEmail1" class="form-label"><b> Email address</b></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputphone1" class="form-label"> <b>Phone</b></label>
+      <input type="number" class="form-control" id="exampleInputphone1" name="phone">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputaddress1" class="form-label"> <b>Address</b></label>
+      <input type="text" class="form-control" id="exampleInputaddress1" name="address">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputpresentAddress1" class="form-label"> <b>Present Address</b></label>
+      <input type="text" class="form-control" id="exampleInputpresentAddress1" name="presentaddress">
+    </div>
+    
+    <!-- <div class="mb-3">
+      <label for="exampleInputcity1" class="form-label"> <b>Nationality</b></label>
+      <select class="form-select form-select-lg mb-3" name="natinality"  aria-label=".form-select-lg example">
+        <option selected>Open this select menu</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Nepal">Nepal</option>
+        <option value="#">Bhutan</option>
+        <option value="#">America</option>
+        <option value="#">Other</option>
+      </select>
+    </div> -->
+   
+    <div class="form-floating">
+        <textarea class="form-control" name="desc" placeholder="Enter your message here.." id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2"> <b> Message</b></label>
+      </div>
+      <div class="mb-3 mt-3 form-check">
+        <input type="checkbox" name="agree"  class="form-check-input " id="exampleCheck1">
+        <label class="form-check-label"  for="exampleCheck1"> <b> king Sujon</b></label>
+      </div>
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+  </form>
+</div>
+{% endblock body %}

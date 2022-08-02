@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Home page  {% endblock title %}
+{% block body %}
+{% load static %}
+<style>
+    #benner{
+   
+   background-image:url("{% static 'media/nature5.jpg'%}");
+   background-position: center;
+   transition: 2s;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: rgb(242, 7, 7);
+   border: 5px solid rgb(19, 122, 232);
+}
+.benner-container{
+   height: 100vh;
+}
+</style>
+<section id="benner">
+    <div class="benner-container d-flex justify-content-center align-items-center">
+        <div class="benner-body text-center"  > 
+            <h1 data-aos="fade-up" data-aos-delay="600"
+            data-aos-anchor-placement="center-bottom"   class="font-weight text-white mb-5"><strong>Fill The Form </strong></h1>
+            <a href="/contact"><button data-aos="fade-up" data-aos-delay="800"
+              data-aos-anchor-placement="center-bottom" class="btn btn-lg btn-primary m-3" onclick="location.href='#' "> <i class="fas fa-play mr-2"></i>Tap Here</button></a>
+           
+        </div>
+    </div>
+</section> 
+
+{% endblock body %}

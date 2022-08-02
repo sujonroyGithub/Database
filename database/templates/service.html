@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% block title %} services{% endblock title %}
+{% block body %}
+{% load static %}
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    
+  </style>
+
+  
+
+<main>
+
+<section class="py-5 text-center container">
+  <div class="row py-lg-5">
+    <div class="col-lg-6 col-md-8 mx-auto">
+      <h1 class="fw-light">Our specializes</h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <a href="/" class="btn btn-primary my-2">Main Page</a>
+        <a href="/help" class="btn btn-warning my-2">Help Page</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="album py-2 bg-light">
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="{% static 'media/p2.jpg'%}" style="height: 300px;width :300px;" alt="">
+
+          <div class="card-body">
+            <p class="card-text">Expert on Web Development. text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/contact"><button type="button" class="btn btn-sm btn-outline-secondary">Contact</button></a>
+                <a href="/help"><button type="button" class="btn btn-sm btn-outline-secondary">Help</button></a>
+              </div>
+              <small class="text-muted">Active 4 hours</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="{% static 'media/p1.jpg'%}" style="height: 300px;width :300px;" alt="">
+
+
+          <div class="card-body">
+            <p class="card-text">Expert on App Development with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/contact"><button type="button" class="btn btn-sm btn-outline-secondary">Contact</button></a>
+                <a href="/help"><button type="button" class="btn btn-sm btn-outline-secondary">Help</button></a>
+              </div>
+              <small class="text-muted">Active 2 hours</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+            <img src="{% static 'media/p3.jpg'%}" style="height: 300px;width :300px;" alt="">
+
+
+          <div class="card-body">
+            <p class="card-text">Expert on Digital Marketing. with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/contact"><button type="button" class="btn btn-sm btn-outline-secondary">Contact</button></a>
+                <a href="/help"><button type="button" class="btn btn-sm btn-outline-secondary">Help</button></a>
+              </div>
+              <small class="text-muted">Active 3 hours</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% endblock body %}
